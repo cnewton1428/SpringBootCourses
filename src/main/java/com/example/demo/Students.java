@@ -11,7 +11,7 @@ public class Students {
     private String firstname;
     private String lastname;
     @ManyToMany(mappedBy = "cast")
-    private Set<Courses> courses;
+    private Set<Courses> course;
 
     public long getId() {
         return id;
@@ -37,11 +37,11 @@ public class Students {
         this.lastname = lastname;
     }
 
-    public Set<Courses> getCourses() {
-        return courses;
+    public Set<Courses> getCourse() {
+        return course;
     }
 
-    public void setCourses(Set<Courses> courses) {
-        this.courses = courses;
+    public void setCourse(Set<Courses> course) {
+        this.course = course;
     }
 }

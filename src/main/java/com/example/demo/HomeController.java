@@ -29,10 +29,10 @@ public class HomeController {
         courses.setCredits(4);
         courses.setDescription("Learn everything about living things...");
 
-        Set<Courses> courses1 = new HashSet<Courses>();
-        courses1.add(courses);
+        Set<Courses> course = new HashSet<Courses>();
+        course.add(courses);
 
-        students.setCourses(courses1);
+        students.setCourse(course);
 
         studentsRepository.save(students);
 
